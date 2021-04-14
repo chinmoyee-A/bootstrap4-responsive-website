@@ -1,0 +1,99 @@
+*{ margin :0; padding:0;box-sizing: border-box;font-family: 'Poppins', sans-serif; }
+
+a{
+	text-decoration: none;  
+}
+li{text-decoration : none;}
+a:hover {list-style: none;}
+p{
+	font-size: 0.9rem;
+	line-height: 1.6;
+	font-weight: 400;
+	color: 	#FFD700;
+}
+
+.header{
+	width: 100%;
+	height: 100vh;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/harley1.jpg);
+	clip-path: polygon(100% 0%,100% 70%, 50% 100%, 0 75%, 0 0 );
+}
+.header:before{
+	content: " ";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0;
+	right: 0;
+	opacity: 0.3;
+	z-index: -1;
+	background: #141E30;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+ 
+.navbar:before{
+	margin-top: 10px;
+	/*padding: 30px;*/
+	content: " ";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0;
+	right: 0;
+	opacity: 0.3;
+	z-index: -1;
+	  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+
+}
+.nav-item a{
+	color: #fff!important;
+	/*font-family: "Times New Roman";*/
+	font-weight: bold;
+}
+
+
+.header-section{
+ width: 100%;
+ height: inherit;
+ color: white;
+ text-align: center;
+ position: relative;
+}
+.center-div{
+
+
+	 width: 100%;
+	 height: auto;
+	 position: 50%;
+	 left: 50%;
+	 top:50%;
+	 padding-top: 250px;
+	 box-sizing: border-box;
+	/* transform: translate(-50%,-50%);
+	-ms- transform: translate(-50%,-50%);
+	-webkittransform: translate(-50%,-50%);*/
+}
+.header-button a{
+ border: 1px solid #fff;
+ border-radius: 100px;
+ margin: 0px 5px;
+ padding: 12px 35px;
+ outline: none;
+ color: #fff;
+ font-size: 1rem;
+ font-weight: 400px;
+ font-height : 1.4;
+ text-align: center;
+}
+
+.header-button a:hover{
+	color:#50d1c0;
+	background: #fff;
+	text-decoration: none;
+	box-shadow: 0 0 20px 0 rgba(128,128,128,0.3);
+}
